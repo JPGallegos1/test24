@@ -1,5 +1,5 @@
 // Tipografía de Monserrat como requiere el ejercicio:
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,900&display=swap');
 
 $font: 'Montserrat', sans-serif;
 
@@ -8,11 +8,12 @@ $font: 'Montserrat', sans-serif;
 // Colores:
 $white: #f1f2f6;
 $red: #ff6b81;
-$primaryGray: #dfe4ea;
+$mainGray: #dddddf;
+$primaryGray: #57606f;
 $secundaryGray: #b9c3ce;
 $black: #2f3542;
 
 // Con estas variables podemos adaptar nuestro sitio a distintos dispositivos
-$desktop: 965px;
+$desktop: 1100px;
 $tablet: 768px;
 $phone: 480px;

@@ -1,0 +1,67 @@
+section.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../../Assets/img/Viajes_Hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  .content-hero {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+
+    .main-info {
+      align-self: center;
+      flex: 0 0 50%;
+      color: $white;
+      margin-bottom: 5.5rem;
+      h1 {
+        font-size: 3rem;
+        border-bottom: 2px solid $white;
+        margin: 1.5rem 0;
+        padding: 1rem 0;
+        font-weight: 700;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    .next-travel {
+      height: 10rem;
+      width: 15rem;
+      background-color: $black;
+      color: $white;
+      margin-bottom: 3rem;
+      margin-left: 2rem;
+      opacity: 0.9;
+      align-self: flex-end;
+      border: 2px dashed $secundaryGray;
+      padding: 2.1rem;
+
+      h4 {
+        font-size: 0.9rem;
+
+        &:nth-child(1) {
+          color: $red;
+          margin-right: 0.3rem;
+          margin-bottom: 0.3rem;
+        }
+
+        img.arrow {
+          margin-left: 0.5rem;
+        }
+      }
+
+      p {
+        font-size: 0.76rem;
+      }
+    }
+  }
+}

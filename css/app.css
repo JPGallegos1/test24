@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,900&display=swap");
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -44,35 +44,47 @@ p {
 
 .header {
   width: 100%;
+  min-height: 3.5rem;
+  background-color: #f1f2f6;
+  -webkit-box-shadow: 0px 1px 8px 0px #b9c3ce;
+  box-shadow: 0px 1px 8px 0px #b9c3ce;
+  margin-bottom: .10rem;
+  opacity: 1;
+  z-index: 99999;
+}
+
+.header .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 3.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
   font-weight: bold;
-  background-color: #f1f2f6;
 }
 
-.header img.logo {
+.header .header-container section.logo-aenima img.logo {
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 
-.header nav ul {
+.header .header-container nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0;
 }
 
-.header nav ul li {
+.header .header-container nav ul li {
   list-style-type: none;
   margin: 0.4rem;
   text-transform: uppercase;
@@ -80,9 +92,10 @@ p {
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
   cursor: pointer;
+  font-weight: 600;
 }
 
-.header nav ul li:hover {
+.header .header-container nav ul li:hover {
   color: #2f3542;
 }
 
@@ -92,17 +105,144 @@ p {
 }
 
 #main {
+  height: 200vh;
+  background-color: #dddddf;
+}
+
+#main section.main-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+section.hero {
   height: 100vh;
   width: 100%;
   background-image: url(../../Assets/img/Viajes_Hero.jpg);
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   background-position: center center;
 }
 
-#main section.main-content {
-  max-width: 965px;
-  margin: 0 auto;
+section.hero .content-hero {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.hero .content-hero .main-info {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  color: #f1f2f6;
+  margin-bottom: 5.5rem;
+}
+
+section.hero .content-hero .main-info h1 {
+  font-size: 3rem;
+  border-bottom: 2px solid #f1f2f6;
+  margin: 1.5rem 0;
+  padding: 1rem 0;
+  font-weight: 700;
+}
+
+section.hero .content-hero .main-info h3 {
+  font-size: 1.5rem;
+}
+
+section.hero .content-hero .main-info p {
+  font-size: 1rem;
+}
+
+section.hero .content-hero .next-travel {
+  height: 10rem;
+  width: 15rem;
+  background-color: #2f3542;
+  color: #f1f2f6;
+  margin-bottom: 3rem;
+  margin-left: 2rem;
+  opacity: 0.9;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  border: 2px dashed #b9c3ce;
+  padding: 2.1rem;
+}
+
+section.hero .content-hero .next-travel h4 {
+  font-size: 0.9rem;
+}
+
+section.hero .content-hero .next-travel h4:nth-child(1) {
+  color: #ff6b81;
+  margin-right: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+section.hero .content-hero .next-travel h4 img.arrow {
+  margin-left: 0.5rem;
+}
+
+section.hero .content-hero .next-travel p {
+  font-size: 0.76rem;
+}
+
+.tendencies {
+  height: 100vh;
+}
+
+.tendencies h2 {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: #2f3542;
+}
+
+.tendencies .content-tendencies {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}
+
+.tendencies .content-tendencies article.card {
+  background-color: #f1f2f6;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 5px 0px #b9c3ce;
+  box-shadow: 0px 0px 5px 0px #b9c3ce;
+}
+
+.tendencies .content-tendencies article.card img {
+  width: 100%;
+}
+
+.tendencies .content-tendencies article.card .description {
+  padding: 2rem;
+}
+
+.tendencies .content-tendencies article.card .description h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2f3542;
+}
+
+.tendencies .content-tendencies article.card .description p {
+  font-size: 0.8rem;
+}
+
+section.blog {
+  background-color: transparent;
+  position: relative;
+  bottom: 20rem;
+}
+
+section.blog .blog-content {
+  border: 3px solid #2f3542;
 }
 /*# sourceMappingURL=app.css.map */
