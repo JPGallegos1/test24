@@ -1,8 +1,16 @@
+// Tipografía de Monserrat como requiere el ejercicio:
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+$font: 'Montserrat', sans-serif;
+
 // La elección de los colores es importante para una marca, decidí que esta paleta cumplía los requisitos:
 // https://flatuicolors.com/palette/cn
-
-// Colores
+// Colores:
+$white: #f1f2f6;
 $red: #ff6b81;
+$primaryGray: #dfe4ea;
+$secundaryGray: #b9c3ce;
+$black: #2f3542;
 
 // Con estas variables podemos adaptar nuestro sitio a distintos dispositivos
 $desktop: 1200px;
