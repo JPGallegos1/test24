@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "app.scss",
+        "sass/_vars.scss",
+        "sass/_mixins.scss"
+    ],
+    "names": [],
+    "file": "app.css"
+}
