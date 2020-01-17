@@ -5,10 +5,12 @@
   align-items: center;
   min-height: 3.5rem;
   font-weight: bold;
+  background-color: $white;
 
-  h3 {
-    text-transform: uppercase;
-    color: $red;
+  img.logo{
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
   }
 
   nav {
@@ -23,6 +25,7 @@
         text-transform: uppercase;
         color: $secundaryGray;
         transition: color 0.3s ease-in-out;
+        cursor: pointer;
 
         &:hover {
           color: $black;
@@ -30,4 +33,9 @@
       }
     }
   }
+}
+
+.fixed-header{
+  position: fixed;
+  top: 0;
 }
