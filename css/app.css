@@ -129,18 +129,54 @@ section.hero .content-hero {
           justify-content: space-between;
 }
 
-section.hero .content-hero .main-info {
+section.hero .content-hero .hero-description {
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
   color: #f1f2f6;
-  margin-bottom: 5.5rem;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-section.hero .content-hero .main-info h1 {
+section.hero .content-hero .hero-description .slider {
+  height: 3.6rem;
+  width: 3.6rem;
+  border-radius: 50%;
+  border: none;
+  background-color: #57606f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: 13.5rem;
+}
+
+section.hero .content-hero .hero-description .slider button {
+  height: 70%;
+  width: 70%;
+  border-radius: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+}
+
+section.hero .content-hero .hero-description h1 {
   font-size: 3rem;
   border-bottom: 2px solid #f1f2f6;
   margin: 1.5rem 0;
@@ -148,11 +184,11 @@ section.hero .content-hero .main-info h1 {
   font-weight: 700;
 }
 
-section.hero .content-hero .main-info h3 {
+section.hero .content-hero .hero-description h3 {
   font-size: 1.5rem;
 }
 
-section.hero .content-hero .main-info p {
+section.hero .content-hero .hero-description p {
   font-size: 1rem;
 }
 

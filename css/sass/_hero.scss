@@ -11,11 +11,38 @@ section.hero {
     display: flex;
     justify-content: space-between;
 
-    .main-info {
+    .hero-description {
       align-self: center;
       flex: 0 0 50%;
       color: $white;
-      margin-bottom: 5.5rem;
+      margin-bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+      
+
+      .slider{
+        height: 3.6rem;
+        width: 3.6rem;
+        border-radius: 50%;
+        border: none;
+        background-color: $primaryGray;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 13.5rem;
+
+        button{
+          height: 70%;
+          width: 70%;
+          border-radius: 50%;
+          align-self: center;
+          justify-self: center;
+          border: none;
+          cursor: pointer;
+          position: absolute;
+        }
+      }
+
       h1 {
         font-size: 3rem;
         border-bottom: 2px solid $white;
