@@ -162,6 +162,15 @@ section.hero .content-hero .hero-description .slider {
   top: 13.5rem;
 }
 
+section.hero .content-hero .hero-description .slider div.line {
+  height: .3rem;
+  width: 20rem;
+  background-color: #ff6b81;
+  position: absolute;
+  right: 3rem;
+  top: 1.5rem;
+}
+
 section.hero .content-hero .hero-description .slider button {
   height: 70%;
   width: 70%;
@@ -174,6 +183,7 @@ section.hero .content-hero .hero-description .slider button {
   border: none;
   cursor: pointer;
   position: absolute;
+  font-size: 1.1rem;
 }
 
 section.hero .content-hero .hero-description h1 {
