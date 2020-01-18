@@ -1,5 +1,6 @@
 .tendencies {
   height: 100vh;
+  background-color: $mainGray;
 
   h2 {
     margin-top: 4rem;
@@ -20,6 +21,7 @@
       -webkit-box-shadow: 0px 0px 5px 0px $secundaryGray;
       -moz-box-shadow: 0px 0px 5px 0px $secundaryGray;
       box-shadow: 0px 0px 5px 0px $secundaryGray;
+
       img {
         width: 100%;
       }

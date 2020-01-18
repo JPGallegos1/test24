@@ -105,11 +105,6 @@ p {
   top: 0;
 }
 
-#main {
-  height: 200vh;
-  background-color: #dddddf;
-}
-
 #main section.main-content {
   max-width: 1100px;
   margin: 0 auto;
@@ -195,6 +190,7 @@ section.hero .content-hero .next-travel p {
 
 .tendencies {
   height: 100vh;
+  background-color: #dddddf;
 }
 
 .tendencies h2 {
@@ -245,7 +241,12 @@ section.blog {
   bottom: 17rem;
 }
 
-section.blog h2 {
+section.blog .main-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+section.blog .main-content h2 {
   margin-bottom: 2rem;
   font-weight: 600;
   font-size: 1.7rem;
@@ -253,14 +254,14 @@ section.blog h2 {
   text-transform: uppercase;
 }
 
-section.blog .blog-content {
+section.blog .main-content .blog-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   color: #f1f2f6;
 }
 
-section.blog .blog-content .card-content {
+section.blog .main-content .blog-content .card-content {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 66%;
           flex: 0 0 66%;
@@ -274,7 +275,7 @@ section.blog .blog-content .card-content {
           flex-direction: column;
 }
 
-section.blog .blog-content .card {
+section.blog .main-content .blog-content .card {
   height: 55vh;
   width: 100%;
   background-image: url("../../Assets/img/articulo_big_01.png");
@@ -284,17 +285,17 @@ section.blog .blog-content .card {
   border-radius: 5px;
 }
 
-section.blog .blog-content .card:last-of-type {
+section.blog .main-content .blog-content .card:last-of-type {
   margin: 1rem 0 0 0;
   background-image: url("../../Assets/img/articulo_big_02.png");
 }
 
-section.blog .blog-content .card h5 {
+section.blog .main-content .blog-content .card h5 {
   padding: 2rem 0 0 2rem;
   text-shadow: #2f3542 0.5px 0.5px;
 }
 
-section.blog .blog-content .card .card-description {
+section.blog .main-content .blog-content .card .card-description {
   height: 91%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -309,7 +310,7 @@ section.blog .blog-content .card .card-description {
   padding: 2rem;
 }
 
-section.blog .blog-content .card .card-description .time {
+section.blog .main-content .blog-content .card .card-description .time {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,18 +319,18 @@ section.blog .blog-content .card .card-description .time {
           align-items: center;
 }
 
-section.blog .blog-content .card .card-description .time a {
+section.blog .main-content .blog-content .card .card-description .time a {
   font-size: 0.8rem;
   color: #f1f2f6;
   text-decoration: none;
   margin: 0 0 0 0.3rem;
 }
 
-section.blog .blog-content .card .card-description h4 {
+section.blog .main-content .blog-content .card .card-description h4 {
   font-weight: 600;
 }
 
-section.blog .blog-content .card .card-description p {
+section.blog .main-content .blog-content .card .card-description p {
   font-size: 0.8rem;
   font-weight: 600;
   margin: 0 0 1.8rem 0;
@@ -339,5 +340,16 @@ footer {
   width: 100%;
   min-height: 3.5rem;
   background-color: #2f3542;
+  height: 6rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=app.css.map */
