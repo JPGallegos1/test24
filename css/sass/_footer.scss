@@ -10,5 +10,11 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    address{
+      display: flex;
+      width: 3rem;
+      justify-content: space-between;
+    }
   }
 }

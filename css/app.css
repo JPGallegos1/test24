@@ -390,4 +390,14 @@ footer .footer-container {
       -ms-flex-align: center;
           align-items: center;
 }
+
+footer .footer-container address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 /*# sourceMappingURL=app.css.map */
