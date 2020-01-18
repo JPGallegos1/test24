@@ -163,7 +163,7 @@ section.hero .content-hero .next-travel {
   color: #f1f2f6;
   margin-bottom: 3rem;
   margin-left: 2rem;
-  opacity: 0.9;
+  opacity: 0.8;
   -ms-flex-item-align: end;
       align-self: flex-end;
   border: 2px dashed #b9c3ce;
@@ -191,10 +191,10 @@ section.hero .content-hero .next-travel p {
 .tendencies {
   height: 100vh;
   background-color: #dddddf;
+  padding: 4rem 0 0 0;
 }
 
 .tendencies h2 {
-  margin-top: 4rem;
   margin-bottom: 2rem;
   font-weight: 600;
   font-size: 1.7rem;
@@ -238,7 +238,7 @@ section.hero .content-hero .next-travel p {
 section.blog {
   background-color: transparent;
   position: relative;
-  bottom: 17rem;
+  bottom: 13rem;
 }
 
 section.blog .main-content {
@@ -340,6 +340,10 @@ footer {
   width: 100%;
   min-height: 3.5rem;
   background-color: #2f3542;
+}
+
+footer .footer-container {
+  max-width: 1100px;
   height: 6rem;
   margin: 0 auto;
   display: -webkit-box;
