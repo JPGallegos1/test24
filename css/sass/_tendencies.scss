@@ -1,23 +1,30 @@
 .tendencies {
+  padding-top: 2.5rem;
   background-color: $mainGray;
-  padding: 2.5rem 2.5rem;
   transition: background-color 0.3s ease-in-out;
   height: 110vh;
 
   @include phone {
     padding: 4rem 0 0 0;
     height: 100vh;
+    padding: 2.5rem 2.5rem;
+
   }
 
   body.dark & {
     background-color: $primaryGray;
   }
   h2 {
+    padding: 0 0 0 1.5rem;
     margin-bottom: 2rem;
     font-weight: 600;
     font-size: 1.7rem;
     color: $black;
     text-transform: uppercase;
+
+    @include phone{
+      padding: 0;
+    }
 
     body.dark & {
       color: $white;
@@ -33,6 +40,8 @@
       -webkit-box-shadow: 0px 0px 5px 0px $secundaryGray;
       -moz-box-shadow: 0px 0px 5px 0px $secundaryGray;
       box-shadow: 0px 0px 5px 0px $secundaryGray;
+      width: 90%;
+      margin: 0 auto;
 
       &:nth-child(2) {
         display: none;
@@ -43,10 +52,9 @@
       }
 
       @include phone {
-        article.card {
+
           background-color: $white;
           border-radius: 10px;
-        }
       }
 
       @include tablet {
