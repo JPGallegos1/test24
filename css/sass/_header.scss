@@ -5,11 +5,11 @@
   -webkit-box-shadow: 0px 1px 8px 0px $secundaryGray;
   -moz-box-shadow: 0px 1px 8px 0px $secundaryGray;
   box-shadow: 0px 1px 8px 0px $secundaryGray;
-  margin-bottom: .10rem;
+  margin-bottom: 0.1rem;
   opacity: 1;
   z-index: 99999;
   position: fixed;
-  transition: background-color .3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 
   body.dark & {
     background-color: $black;
@@ -19,6 +19,7 @@
   }
 
   .header-container {
+    min-height: 3.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,8 +35,8 @@
       }
     }
 
-    .switch{
-      button{
+    .switch {
+      button {
         background: $black;
         border-radius: 1000px;
         border: none;
@@ -44,7 +45,7 @@
         display: flex;
         outline: none;
 
-        &::after{
+        &::after {
           content: "";
           display: block;
           width: 30px;
@@ -55,20 +56,20 @@
           left: 0;
           right: unset;
           border-radius: 100px;
-          transition: .3s ease all;
+          transition: 0.3s ease all;
           box-shadow: 0px 0px 2px 2px $black;
         }
 
-        &.active{
+        &.active {
           background: #fbc531;
           color: $black;
-          &::after{
+          &::after {
             right: 0;
             left: unset;
           }
         }
 
-        span{
+        span {
           width: 30px;
           height: 30px;
           line-height: 30px;
@@ -79,27 +80,64 @@
       }
     }
 
-    nav {
-      ul {
-        display: flex;
-        justify-content: space-between;
-        padding: 0;
+    section.navigation {
+      display: flex;
 
-        li {
-          list-style-type: none;
-          margin: 0.4rem;
-          text-transform: uppercase;
-          color: $secundaryGray;
-          transition: color 0.3s ease-in-out;
-          cursor: pointer;
-          font-weight: 600;
+      nav {
+        display: none;
+        ul {
+          display: flex;
+          justify-content: space-between;
+          padding: 0;
 
-          &:hover {
-            color: $black;
+          li {
+            list-style-type: none;
+            margin: 0.4rem;
+            text-transform: uppercase;
+            color: $secundaryGray;
+            transition: color 0.3s ease-in-out;
+            cursor: pointer;
+            font-weight: 600;
 
-            body.dark & {
-              color: $white;
+            &:hover {
+              color: $black;
+
+              body.dark & {
+                color: $white;
+              }
             }
+          }
+        }
+
+        @include tablet {
+          display: block;
+          
+          html.nav-is-open & {
+            display: block;
+          }
+        }
+      }
+
+      .sidebar {
+        align-self: center;
+
+        button.hamburguer-menu {
+          border: none;
+          cursor: pointer;
+
+          html.nav-is-open & {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            width: 100%; 
+
+            overflow: hidden;
+          }
+
+          @include tablet {
+            display: none;
           }
         }
       }
