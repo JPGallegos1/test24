@@ -85,6 +85,9 @@
 
       nav {
         display: none;
+        position: relative;
+        width: 300px;
+        
         ul {
           display: flex;
           justify-content: space-between;
@@ -109,34 +112,37 @@
           }
         }
 
-        @include tablet {
+        html.nav-is-open & {
+          display: block;
+        }
+
+        @include phone {
           display: block;
           
-          html.nav-is-open & {
-            display: block;
-          }
         }
       }
 
       .sidebar {
         align-self: center;
 
+        html.nav-is-open & {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          top: 0;
+          width: 100%; 
+
+          overflow: hidden;
+        }
+
         button.hamburguer-menu {
           border: none;
           cursor: pointer;
 
-          html.nav-is-open & {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            top: 0;
-            width: 100%; 
+          
 
-            overflow: hidden;
-          }
-
-          @include tablet {
+          @include phone {
             display: none;
           }
         }
