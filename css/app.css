@@ -304,12 +304,12 @@ section.hero .content-hero .hero-description .slider {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  top: 15rem;
+  top: 10rem;
 }
 
 @media (min-width: 480px) {
   section.hero .content-hero .hero-description .slider {
-    top: 15rem;
+    top: 3rem;
   }
 }
 
@@ -358,10 +358,17 @@ section.hero .content-hero .hero-description h1 {
   width: 80%;
 }
 
+section.hero .content-hero .hero-description h1 img.pin {
+  height: 1.3rem;
+}
+
 @media (min-width: 480px) {
   section.hero .content-hero .hero-description h1 {
     font-size: 3rem;
     font-weight: 700;
+  }
+  section.hero .content-hero .hero-description h1 img.pin {
+    height: 2.2rem;
   }
 }
 
