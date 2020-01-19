@@ -12,7 +12,7 @@ section.hero {
     justify-content: space-around;
     flex-direction: column;
 
-    @include tablet{
+    @include tablet {
       flex-direction: row;
       justify-content: space-between;
     }
@@ -28,9 +28,8 @@ section.hero {
         flex: 0 0 50%;
         margin-bottom: 2rem;
       }
-      
 
-      .slider{
+      .slider {
         height: 3.6rem;
         width: 3.6rem;
         border-radius: 50%;
@@ -49,12 +48,12 @@ section.hero {
           top: 8rem;
         }
 
-        @include almost-tablet{
+        @include almost-tablet {
           top: 8rem;
         }
 
-        div.line{
-          height: .3rem;
+        div.line {
+          height: 0.3rem;
           width: 20rem;
           background-color: $red;
           position: absolute;
@@ -62,7 +61,7 @@ section.hero {
           top: 1.5rem;
         }
 
-        button{
+        button {
           height: 70%;
           width: 70%;
           border-radius: 50%;
@@ -76,26 +75,44 @@ section.hero {
       }
 
       h1 {
-        font-size: 3rem;
+        font-size: 1.7rem;
         border-bottom: 2px solid $white;
-        margin: 1.5rem 0;
+        margin: 1.5rem 0 1.5rem 2rem;
         padding: 1rem 0;
-        font-weight: 700;
+        font-weight: 500;
+        width: 80%;
+
+        @include phone {
+          font-size: 3rem;
+          font-weight: 700;
+        }
       }
 
       h3 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin: 0 0 0 2rem;
+
+        @include phone{
+          font-size: 1.5rem;
+
+        }
       }
 
       p {
-        font-size: 1rem;
+        display: none;
+
+        @include phone {
+          display: block;
+          font-size: 1rem;
+        }
       }
     }
 
     .next-travel {
       display: none;
 
-      @include phone{
+      @include phone {
         display: block;
         height: 10rem;
         width: 100%;
@@ -119,7 +136,7 @@ section.hero {
 
         &:nth-child(1) {
           color: $red;
-          margin: 0 .3rem .3rem 0;
+          margin: 0 0.3rem 0.3rem 0;
         }
 
         img.arrow {

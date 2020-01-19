@@ -23,9 +23,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: $desktop;
+    max-width: 300px;
     margin: 0 auto;
     font-weight: bold;
+
+    @include phone{
+      max-width: $desktop;
+    }
 
     section.logo-aenima {
       img.logo {
