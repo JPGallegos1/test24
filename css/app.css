@@ -21,7 +21,7 @@ body {
 }
 
 body.dark {
-  background-color: #2f3542;
+  background-color: #2A3037;
 }
 
 h1, h2, h3, h4, h5 {
@@ -63,9 +63,9 @@ p {
 }
 
 body.dark .header {
-  background-color: #2f3542;
-  -webkit-box-shadow: 0px 1px 8px 0px #2f3542;
-  box-shadow: 0px 1px 8px 0px #2f3542;
+  background-color: #2A3037;
+  -webkit-box-shadow: 0px 1px 8px 0px #2A3037;
+  box-shadow: 0px 1px 8px 0px #2A3037;
 }
 
 .header .header-container {
@@ -90,7 +90,7 @@ body.dark .header {
 }
 
 .header .header-container .switch button {
-  background: #2f3542;
+  background: #2A3037;
   border-radius: 1000px;
   border: none;
   position: relative;
@@ -114,13 +114,13 @@ body.dark .header {
   border-radius: 100px;
   -webkit-transition: .3s ease all;
   transition: .3s ease all;
-  -webkit-box-shadow: 0px 0px 2px 2px #2f3542;
-          box-shadow: 0px 0px 2px 2px #2f3542;
+  -webkit-box-shadow: 0px 0px 2px 2px #2A3037;
+          box-shadow: 0px 0px 2px 2px #2A3037;
 }
 
 .header .header-container .switch button.active {
   background: #fbc531;
-  color: #2f3542;
+  color: #2A3037;
 }
 
 .header .header-container .switch button.active::after {
@@ -159,7 +159,7 @@ body.dark .header {
 }
 
 .header .header-container nav ul li:hover {
-  color: #2f3542;
+  color: #2A3037;
 }
 
 body.dark .header .header-container nav ul li:hover {
@@ -231,7 +231,7 @@ section.hero .content-hero .hero-description .slider {
 section.hero .content-hero .hero-description .slider div.line {
   height: .3rem;
   width: 20rem;
-  background-color: #ff6b81;
+  background-color: #FA6980;
   position: absolute;
   right: 3rem;
   top: 1.5rem;
@@ -271,11 +271,9 @@ section.hero .content-hero .hero-description p {
 section.hero .content-hero .next-travel {
   height: 10rem;
   width: 15rem;
-  background-color: #2f3542;
+  background: rgba(26, 28, 32, 0.69);
   color: #f1f2f6;
-  margin-bottom: 3rem;
-  margin-left: 2rem;
-  opacity: 0.8;
+  margin: 0 0 3rem 2rem;
   -ms-flex-item-align: end;
       align-self: flex-end;
   border: 2px dashed #b9c3ce;
@@ -288,9 +286,8 @@ section.hero .content-hero .next-travel h4 {
 }
 
 section.hero .content-hero .next-travel h4:nth-child(1) {
-  color: #ff6b81;
-  margin-right: 0.3rem;
-  margin-bottom: 0.3rem;
+  color: #FA6980;
+  margin: 0 .3rem .3rem 0;
 }
 
 section.hero .content-hero .next-travel h4 img.arrow {
@@ -303,7 +300,7 @@ section.hero .content-hero .next-travel p {
 
 .tendencies {
   height: 100vh;
-  background-color: #dddddf;
+  background-color: #EBEBEB;
   padding: 4rem 0 0 0;
   -webkit-transition: background-color .3s ease-in-out;
   transition: background-color .3s ease-in-out;
@@ -317,7 +314,7 @@ body.dark .tendencies {
   margin-bottom: 2rem;
   font-weight: 600;
   font-size: 1.7rem;
-  color: #2f3542;
+  color: #2A3037;
   text-transform: uppercase;
 }
 
@@ -341,10 +338,10 @@ body.dark .tendencies h2 {
 }
 
 body.dark .tendencies .content-tendencies article.card {
-  background-color: #2f3542;
+  background-color: #2A3037;
   color: #f1f2f6;
-  -webkit-box-shadow: 0px 0px 5px 0px #2f3542;
-  box-shadow: 0px 0px 5px 0px #2f3542;
+  -webkit-box-shadow: 0px 0px 5px 0px #2A3037;
+  box-shadow: 0px 0px 5px 0px #2A3037;
 }
 
 .tendencies .content-tendencies article.card img {
@@ -357,10 +354,24 @@ body.dark .tendencies .content-tendencies article.card {
   padding: 2rem;
 }
 
+.tendencies .content-tendencies article.card .description h3 {
+  font-size: 1.1rem;
+  background: #FA6980;
+  color: #f1f2f6;
+  width: 28%;
+  text-align: center;
+  border-radius: 5px;
+  padding: .3rem;
+  font-weight: 600;
+  position: relative;
+  bottom: 7rem;
+  text-transform: uppercase;
+}
+
 .tendencies .content-tendencies article.card .description h4 {
   font-size: 1rem;
   font-weight: 700;
-  color: #2f3542;
+  color: #2A3037;
 }
 
 body.dark .tendencies .content-tendencies article.card .description h4 {
@@ -386,7 +397,7 @@ section.blog .main-content h2 {
   margin-bottom: 2rem;
   font-weight: 600;
   font-size: 1.7rem;
-  color: #2f3542;
+  color: #2A3037;
   text-transform: uppercase;
 }
 
@@ -423,6 +434,16 @@ section.blog .main-content .blog-content .card-content .card {
   background-size: cover;
   background-position: center center;
   border-radius: 5px;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+section.blog .main-content .blog-content .card-content .card:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
 section.blog .main-content .blog-content .card-content .card:last-of-type {
@@ -432,7 +453,7 @@ section.blog .main-content .blog-content .card-content .card:last-of-type {
 
 section.blog .main-content .blog-content .card-content .card h5 {
   padding: 2rem 0 0 2rem;
-  text-shadow: #2f3542 0.5px 0.5px;
+  text-shadow: #2A3037 0.5px 0.5px;
 }
 
 section.blog .main-content .blog-content .card-content .card .card-description {
@@ -484,20 +505,33 @@ section.blog aside .aside-cards {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: #2f3542;
+  color: #2A3037;
 }
 
-section.blog aside .aside-cards h4 {
-  margin: 1.2rem 0 .3rem 0;
+section.blog aside .aside-cards .card {
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+section.blog aside .aside-cards .card:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+section.blog aside .aside-cards .card h4 {
+  margin: 1.2rem 0 0.3rem 0;
   font-size: 1rem;
   font-weight: 600;
 }
 
-body.dark section.blog aside .aside-cards h4 {
+body.dark section.blog aside .aside-cards .card h4 {
   color: #f1f2f6;
 }
 
-section.blog aside .aside-cards .time {
+section.blog aside .aside-cards .card .time {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -507,21 +541,21 @@ section.blog aside .aside-cards .time {
   margin: 0 0 1.2rem 0;
 }
 
-section.blog aside .aside-cards .time a {
+section.blog aside .aside-cards .card .time a {
   font-size: 0.8rem;
-  color: #2f3542;
+  color: #2A3037;
   text-decoration: none;
   margin: 0 0 0 0.3rem;
 }
 
-body.dark section.blog aside .aside-cards .time a {
+body.dark section.blog aside .aside-cards .card .time a {
   color: #f1f2f6;
 }
 
 footer {
   width: 100%;
   min-height: 3.5rem;
-  background-color: #2f3542;
+  background-color: #2A3037;
   -webkit-transition: background-color .3s ease-in-out;
   transition: background-color .3s ease-in-out;
 }

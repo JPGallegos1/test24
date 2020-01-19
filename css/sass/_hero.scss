@@ -73,11 +73,9 @@ section.hero {
     .next-travel {
       height: 10rem;
       width: 15rem;
-      background-color: $black;
+      background: rgba(26, 28, 32, 0.69);
       color: $white;
-      margin-bottom: 3rem;
-      margin-left: 2rem;
-      opacity: 0.8;
+      margin: 0 0 3rem 2rem;
       align-self: flex-end;
       border: 2px dashed $secundaryGray;
       padding: 2.1rem;
@@ -88,8 +86,7 @@ section.hero {
 
         &:nth-child(1) {
           color: $red;
-          margin-right: 0.3rem;
-          margin-bottom: 0.3rem;
+          margin: 0 .3rem .3rem 0;
         }
 
         img.arrow {

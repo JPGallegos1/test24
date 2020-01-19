@@ -35,6 +35,12 @@ section.blog {
           background-size: cover;
           background-position: center center;
           border-radius: 5px;
+          transition: transform 0.3s ease-in-out;
+          cursor: pointer;
+
+          &:hover {
+            transform: scale(1.04);
+          }
           &:last-of-type {
             margin: 1rem 0 0 0;
             background-image: url("../../Assets/img/articulo_big_02.png");
@@ -43,8 +49,6 @@ section.blog {
           h5 {
             padding: 2rem 0 0 2rem;
             text-shadow: $black 0.5px 0.5px;
-
-            
           }
 
           .card-description {
@@ -67,7 +71,6 @@ section.blog {
 
             h4 {
               font-weight: 600;
-              
             }
             p {
               font-size: 0.8rem;
@@ -80,34 +83,43 @@ section.blog {
     }
   }
 
-  aside{
-    .aside-cards{
+  aside {
+    .aside-cards {
       display: flex;
       flex-direction: column;
       color: $black;
 
-      h4{
-        margin: 1.2rem 0 .3rem 0;
-        font-size: 1rem;
-        font-weight: 600;
+      .card {
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
 
-        body.dark & {
-          color: $white;
+        &:hover {
+          transform: scale(1.07);
         }
-      }
 
-      .time {
-        display: flex;
-        align-items: center;
-        margin: 0 0 1.2rem 0;
-        a {
-          font-size: 0.8rem;
-          color: $black;
-          text-decoration: none;
-          margin: 0 0 0 0.3rem;
+        h4 {
+          margin: 1.2rem 0 0.3rem 0;
+          font-size: 1rem;
+          font-weight: 600;
 
           body.dark & {
             color: $white;
+          }
+        }
+
+        .time {
+          display: flex;
+          align-items: center;
+          margin: 0 0 1.2rem 0;
+          a {
+            font-size: 0.8rem;
+            color: $black;
+            text-decoration: none;
+            margin: 0 0 0 0.3rem;
+
+            body.dark & {
+              color: $white;
+            }
           }
         }
       }
