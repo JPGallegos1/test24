@@ -217,7 +217,7 @@ section.hero .content-hero .hero-description .slider {
   width: 3.6rem;
   border-radius: 50%;
   border: none;
-  background-color: #57606f;
+  background-color: #7A838D;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -307,7 +307,7 @@ section.hero .content-hero .next-travel p {
 }
 
 body.dark .tendencies {
-  background-color: #57606f;
+  background-color: #7A838D;
 }
 
 .tendencies h2 {
@@ -380,6 +380,7 @@ body.dark .tendencies .content-tendencies article.card .description h4 {
 
 .tendencies .content-tendencies article.card .description p {
   font-size: 0.8rem;
+  color: #7A838D;
 }
 
 section.blog {
@@ -525,6 +526,7 @@ section.blog aside .aside-cards .card h4 {
   margin: 1.2rem 0 0.3rem 0;
   font-size: 1rem;
   font-weight: 600;
+  color: #202124;
 }
 
 body.dark section.blog aside .aside-cards .card h4 {
@@ -561,7 +563,7 @@ footer {
 }
 
 body.dark footer {
-  background-color: #57606f;
+  background-color: #7A838D;
 }
 
 footer .footer-container {
