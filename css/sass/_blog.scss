@@ -4,8 +4,12 @@ section.blog {
   bottom: 5rem;
 
   @include phone {
-    bottom: 13rem;
+    bottom: 0rem;
     padding: 2rem 2rem;
+  }
+
+  @include tablet{
+    bottom: 13rem;
   }
 
   .main-content {

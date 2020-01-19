@@ -2,7 +2,7 @@
   background-color: $mainGray;
   padding: 2.5rem 2.5rem;
   transition: background-color 0.3s ease-in-out;
-  height: 90vh;
+  height: 110vh;
 
   @include phone {
     padding: 4rem 0 0 0;
@@ -33,7 +33,7 @@
       -webkit-box-shadow: 0px 0px 5px 0px $secundaryGray;
       -moz-box-shadow: 0px 0px 5px 0px $secundaryGray;
       box-shadow: 0px 0px 5px 0px $secundaryGray;
-      
+
       &:nth-child(2) {
         display: none;
       }
@@ -78,9 +78,14 @@
       }
 
       img {
-        width: 100%;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+        width: 99%;
+        margin: 2px;
+        border-radius: 0;
+        @include phone{
+          width: 100%;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+        }
       }
 
       .description {
