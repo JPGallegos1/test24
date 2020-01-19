@@ -12,6 +12,10 @@ section.blog {
       font-size: 1.7rem;
       color: $black;
       text-transform: uppercase;
+
+      body.dark & {
+        color: $white;
+      }
     }
 
     .blog-content {
@@ -39,6 +43,8 @@ section.blog {
           h5 {
             padding: 2rem 0 0 2rem;
             text-shadow: $black 0.5px 0.5px;
+
+            
           }
 
           .card-description {
@@ -61,6 +67,7 @@ section.blog {
 
             h4 {
               font-weight: 600;
+              
             }
             p {
               font-size: 0.8rem;
@@ -83,6 +90,10 @@ section.blog {
         margin: 1.2rem 0 .3rem 0;
         font-size: 1rem;
         font-weight: 600;
+
+        body.dark & {
+          color: $white;
+        }
       }
 
       .time {
@@ -94,6 +105,10 @@ section.blog {
           color: $black;
           text-decoration: none;
           margin: 0 0 0 0.3rem;
+
+          body.dark & {
+            color: $white;
+          }
         }
       }
     }

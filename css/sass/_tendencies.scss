@@ -2,12 +2,21 @@
   height: 100vh;
   background-color: $mainGray;
   padding: 4rem 0 0 0;
+  transition: background-color .3s ease-in-out;
+
+  body.dark & {
+    background-color: $primaryGray;
+  }
   h2 {
     margin-bottom: 2rem;
     font-weight: 600;
     font-size: 1.7rem;
     color: $black;
     text-transform: uppercase;
+
+    body.dark & {
+      color: $white;
+    }
   }
 
   .content-tendencies {
@@ -21,8 +30,18 @@
       -moz-box-shadow: 0px 0px 5px 0px $secundaryGray;
       box-shadow: 0px 0px 5px 0px $secundaryGray;
 
+      body.dark & {
+        background-color: $black;
+        color: $white;
+        -webkit-box-shadow: 0px 0px 5px 0px $black;
+        -moz-box-shadow: 0px 0px 5px 0px $black;
+        box-shadow: 0px 0px 5px 0px $black;
+      }
+
       img {
         width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
       }
 
       .description {
@@ -31,6 +50,10 @@
           font-size: 1rem;
           font-weight: 700;
           color: $black;
+
+          body.dark & {
+            color: $white;
+          }
         }
 
         p {

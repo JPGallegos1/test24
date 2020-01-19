@@ -16,6 +16,12 @@ body {
   padding: 0;
   font-family: "Montserrat", sans-serif;
   background-color: #f1f2f6;
+  -webkit-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
+}
+
+body.dark {
+  background-color: #2f3542;
 }
 
 h1, h2, h3, h4, h5 {
@@ -52,6 +58,14 @@ p {
   opacity: 1;
   z-index: 99999;
   position: fixed;
+  -webkit-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
+}
+
+body.dark .header {
+  background-color: #2f3542;
+  -webkit-box-shadow: 0px 1px 8px 0px #2f3542;
+  box-shadow: 0px 1px 8px 0px #2f3542;
 }
 
 .header .header-container {
@@ -73,6 +87,54 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
+}
+
+.header .header-container .switch button {
+  background: #2f3542;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+}
+
+.header .header-container .switch button::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #f1f2f6;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+  -webkit-box-shadow: 0px 0px 2px 2px #2f3542;
+          box-shadow: 0px 0px 2px 2px #2f3542;
+}
+
+.header .header-container .switch button.active {
+  background: #fbc531;
+  color: #2f3542;
+}
+
+.header .header-container .switch button.active::after {
+  right: 0;
+  left: unset;
+}
+
+.header .header-container .switch button span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: #f1f2f6;
 }
 
 .header .header-container nav ul {
@@ -98,6 +160,10 @@ p {
 
 .header .header-container nav ul li:hover {
   color: #2f3542;
+}
+
+body.dark .header .header-container nav ul li:hover {
+  color: #f1f2f6;
 }
 
 .fixed-header {
@@ -217,7 +283,8 @@ section.hero .content-hero .next-travel {
 }
 
 section.hero .content-hero .next-travel h4 {
-  font-size: 0.9rem;
+  font-size: 0.79rem;
+  text-transform: uppercase;
 }
 
 section.hero .content-hero .next-travel h4:nth-child(1) {
@@ -238,6 +305,12 @@ section.hero .content-hero .next-travel p {
   height: 100vh;
   background-color: #dddddf;
   padding: 4rem 0 0 0;
+  -webkit-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
+}
+
+body.dark .tendencies {
+  background-color: #57606f;
 }
 
 .tendencies h2 {
@@ -246,6 +319,10 @@ section.hero .content-hero .next-travel p {
   font-size: 1.7rem;
   color: #2f3542;
   text-transform: uppercase;
+}
+
+body.dark .tendencies h2 {
+  color: #f1f2f6;
 }
 
 .tendencies .content-tendencies {
@@ -263,8 +340,17 @@ section.hero .content-hero .next-travel p {
   box-shadow: 0px 0px 5px 0px #b9c3ce;
 }
 
+body.dark .tendencies .content-tendencies article.card {
+  background-color: #2f3542;
+  color: #f1f2f6;
+  -webkit-box-shadow: 0px 0px 5px 0px #2f3542;
+  box-shadow: 0px 0px 5px 0px #2f3542;
+}
+
 .tendencies .content-tendencies article.card img {
   width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .tendencies .content-tendencies article.card .description {
@@ -275,6 +361,10 @@ section.hero .content-hero .next-travel p {
   font-size: 1rem;
   font-weight: 700;
   color: #2f3542;
+}
+
+body.dark .tendencies .content-tendencies article.card .description h4 {
+  color: #f1f2f6;
 }
 
 .tendencies .content-tendencies article.card .description p {
@@ -298,6 +388,10 @@ section.blog .main-content h2 {
   font-size: 1.7rem;
   color: #2f3542;
   text-transform: uppercase;
+}
+
+body.dark section.blog .main-content h2 {
+  color: #f1f2f6;
 }
 
 section.blog .main-content .blog-content {
@@ -399,6 +493,10 @@ section.blog aside .aside-cards h4 {
   font-weight: 600;
 }
 
+body.dark section.blog aside .aside-cards h4 {
+  color: #f1f2f6;
+}
+
 section.blog aside .aside-cards .time {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -416,10 +514,20 @@ section.blog aside .aside-cards .time a {
   margin: 0 0 0 0.3rem;
 }
 
+body.dark section.blog aside .aside-cards .time a {
+  color: #f1f2f6;
+}
+
 footer {
   width: 100%;
   min-height: 3.5rem;
   background-color: #2f3542;
+  -webkit-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
+}
+
+body.dark footer {
+  background-color: #57606f;
 }
 
 footer .footer-container {
