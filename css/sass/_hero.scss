@@ -38,14 +38,17 @@ section.hero {
         display: flex;
         justify-content: center;
         position: relative;
-        top: 10rem;
+        top: 13rem;
+        left: 2rem;
 
         @include phone {
           top: 3rem;
+          left: 0;
         }
 
         @include tablet {
           top: 8rem;
+          left: 3rem;
         }
 
         @include almost-tablet {
