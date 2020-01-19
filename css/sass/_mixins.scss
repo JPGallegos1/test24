@@ -4,8 +4,20 @@
     }
 }
 
+@mixin almost-phone{
+    @media (min-width: #{$almost-phone}){
+        @content;
+    }
+}
+
 @mixin tablet{
     @media (min-width: #{$tablet}){
+        @content;
+    }
+}
+
+@mixin almost-tablet{
+    @media (min-width: #{$almost-tablet}){
         @content;
     }
 }

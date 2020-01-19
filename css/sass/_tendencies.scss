@@ -1,8 +1,13 @@
 .tendencies {
-  height: 100vh;
   background-color: $mainGray;
-  padding: 4rem 0 0 0;
-  transition: background-color .3s ease-in-out;
+  padding: 2.5rem 2.5rem;
+  transition: background-color 0.3s ease-in-out;
+  height: 90vh;
+
+  @include phone {
+    padding: 4rem 0 0 0;
+    height: 100vh;
+  }
 
   body.dark & {
     background-color: $primaryGray;
@@ -23,12 +28,46 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1rem;
+
     article.card {
-      background-color: $white;
-      border-radius: 10px;
       -webkit-box-shadow: 0px 0px 5px 0px $secundaryGray;
       -moz-box-shadow: 0px 0px 5px 0px $secundaryGray;
       box-shadow: 0px 0px 5px 0px $secundaryGray;
+      
+      &:nth-child(2) {
+        display: none;
+      }
+
+      &:last-of-type {
+        display: none;
+      }
+
+      @include phone {
+        article.card {
+          background-color: $white;
+          border-radius: 10px;
+        }
+      }
+
+      @include tablet {
+        &:nth-child(2) {
+          display: none;
+        }
+
+        &:last-of-type {
+          display: block;
+        }
+
+        @include desktop {
+          &:nth-child(2) {
+            display: block;
+          }
+
+          &:last-of-type {
+            display: block;
+          }
+        }
+      }
 
       body.dark & {
         background-color: $black;
@@ -47,14 +86,14 @@
       .description {
         padding: 2rem;
 
-        h3{
+        h3 {
           font-size: 1.1rem;
           background: $red;
           color: $white;
           width: 28%;
           text-align: center;
           border-radius: 5px;
-          padding: .3rem;
+          padding: 0.3rem;
           font-weight: 600;
           position: relative;
           bottom: 7rem;

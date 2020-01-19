@@ -9,15 +9,25 @@ section.hero {
   .content-hero {
     height: 100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-direction: column;
+
+    @include tablet{
+      flex-direction: row;
+      justify-content: space-between;
+    }
 
     .hero-description {
       align-self: center;
-      flex: 0 0 50%;
       color: $white;
-      margin-bottom: 2rem;
       display: flex;
       flex-direction: column;
+      flex: none;
+
+      @include tablet {
+        flex: 0 0 50%;
+        margin-bottom: 2rem;
+      }
       
 
       .slider{
@@ -29,7 +39,19 @@ section.hero {
         display: flex;
         justify-content: center;
         position: relative;
-        top: 13.5rem;
+        top: 15rem;
+
+        @include phone {
+          top: 15rem;
+        }
+
+        @include tablet {
+          top: 8rem;
+        }
+
+        @include almost-tablet{
+          top: 8rem;
+        }
 
         div.line{
           height: .3rem;
@@ -71,14 +93,25 @@ section.hero {
     }
 
     .next-travel {
-      height: 10rem;
-      width: 15rem;
-      background: rgba(26, 28, 32, 0.69);
-      color: $white;
-      margin: 0 0 3rem 2rem;
-      align-self: flex-end;
-      border: 2px dashed $secundaryGray;
-      padding: 2.1rem;
+      display: none;
+
+      @include phone{
+        display: block;
+        height: 10rem;
+        width: 100%;
+        background: rgba(26, 28, 32, 0.69);
+        color: $white;
+        margin: 0;
+        align-self: center;
+        border: 2px dashed $secundaryGray;
+        padding: 2.1rem;
+      }
+
+      @include tablet {
+        width: 15rem;
+        align-self: flex-end;
+        margin: 0 0 3rem 2rem;
+      }
 
       h4 {
         font-size: 0.79rem;

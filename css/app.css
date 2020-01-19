@@ -240,19 +240,30 @@ section.hero .content-hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  section.hero .content-hero {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 section.hero .content-hero .hero-description {
   -ms-flex-item-align: center;
       align-self: center;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
   color: #f1f2f6;
-  margin-bottom: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -260,6 +271,18 @@ section.hero .content-hero .hero-description {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+
+@media (min-width: 768px) {
+  section.hero .content-hero .hero-description {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    margin-bottom: 2rem;
+  }
 }
 
 section.hero .content-hero .hero-description .slider {
@@ -275,7 +298,25 @@ section.hero .content-hero .hero-description .slider {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  top: 13.5rem;
+  top: 15rem;
+}
+
+@media (min-width: 480px) {
+  section.hero .content-hero .hero-description .slider {
+    top: 15rem;
+  }
+}
+
+@media (min-width: 768px) {
+  section.hero .content-hero .hero-description .slider {
+    top: 8rem;
+  }
+}
+
+@media (min-width: 990px) {
+  section.hero .content-hero .hero-description .slider {
+    top: 8rem;
+  }
 }
 
 section.hero .content-hero .hero-description .slider div.line {
@@ -319,15 +360,32 @@ section.hero .content-hero .hero-description p {
 }
 
 section.hero .content-hero .next-travel {
-  height: 10rem;
-  width: 15rem;
-  background: rgba(26, 28, 32, 0.69);
-  color: #f1f2f6;
-  margin: 0 0 3rem 2rem;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  border: 2px dashed #b9c3ce;
-  padding: 2.1rem;
+  display: none;
+}
+
+@media (min-width: 480px) {
+  section.hero .content-hero .next-travel {
+    display: block;
+    height: 10rem;
+    width: 100%;
+    background: rgba(26, 28, 32, 0.69);
+    color: #f1f2f6;
+    margin: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    border: 2px dashed #b9c3ce;
+    padding: 2.1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  section.hero .content-hero .next-travel {
+    width: 15rem;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin: 0 0 3rem 2rem;
+  }
 }
 
 section.hero .content-hero .next-travel h4 {
@@ -349,11 +407,18 @@ section.hero .content-hero .next-travel p {
 }
 
 .tendencies {
-  height: 100vh;
   background-color: #EBEBEB;
-  padding: 4rem 0 0 0;
-  -webkit-transition: background-color .3s ease-in-out;
-  transition: background-color .3s ease-in-out;
+  padding: 2.5rem 2.5rem;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  height: 90vh;
+}
+
+@media (min-width: 480px) {
+  .tendencies {
+    padding: 4rem 0 0 0;
+    height: 100vh;
+  }
 }
 
 body.dark .tendencies {
@@ -381,10 +446,41 @@ body.dark .tendencies h2 {
 }
 
 .tendencies .content-tendencies article.card {
-  background-color: #f1f2f6;
-  border-radius: 10px;
   -webkit-box-shadow: 0px 0px 5px 0px #b9c3ce;
   box-shadow: 0px 0px 5px 0px #b9c3ce;
+}
+
+.tendencies .content-tendencies article.card:nth-child(2) {
+  display: none;
+}
+
+.tendencies .content-tendencies article.card:last-of-type {
+  display: none;
+}
+
+@media (min-width: 480px) {
+  .tendencies .content-tendencies article.card article.card {
+    background-color: #f1f2f6;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .tendencies .content-tendencies article.card:nth-child(2) {
+    display: none;
+  }
+  .tendencies .content-tendencies article.card:last-of-type {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1100px) {
+  .tendencies .content-tendencies article.card:nth-child(2) {
+    display: block;
+  }
+  .tendencies .content-tendencies article.card:last-of-type {
+    display: block;
+  }
 }
 
 body.dark .tendencies .content-tendencies article.card {
@@ -411,7 +507,7 @@ body.dark .tendencies .content-tendencies article.card {
   width: 28%;
   text-align: center;
   border-radius: 5px;
-  padding: .3rem;
+  padding: 0.3rem;
   font-weight: 600;
   position: relative;
   bottom: 7rem;
@@ -436,7 +532,14 @@ body.dark .tendencies .content-tendencies article.card .description h4 {
 section.blog {
   background-color: transparent;
   position: relative;
-  bottom: 13rem;
+  bottom: 5rem;
+}
+
+@media (min-width: 480px) {
+  section.blog {
+    bottom: 13rem;
+    padding: 2rem 2rem;
+  }
 }
 
 section.blog .main-content {
@@ -445,6 +548,7 @@ section.blog .main-content {
 }
 
 section.blog .main-content h2 {
+  padding: 0 0 0 2rem;
   margin-bottom: 2rem;
   font-weight: 600;
   font-size: 1.7rem;
@@ -452,22 +556,29 @@ section.blog .main-content h2 {
   text-transform: uppercase;
 }
 
+@media (min-width: 480px) {
+  section.blog .main-content h2 {
+    padding: 0;
+  }
+}
+
 body.dark section.blog .main-content h2 {
   color: #f1f2f6;
 }
 
 section.blog .main-content .blog-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   color: #f1f2f6;
 }
 
+@media (min-width: 480px) {
+  section.blog .main-content .blog-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 section.blog .main-content .blog-content .card-content {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 66%;
-          flex: 0 0 66%;
-  margin: 0 1.1rem 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -475,6 +586,15 @@ section.blog .main-content .blog-content .card-content {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (min-width: 480px) {
+  section.blog .main-content .blog-content .card-content {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 66%;
+            flex: 0 0 66%;
+    margin: 0 1.1rem 0 0;
+  }
 }
 
 section.blog .main-content .blog-content .card-content .card {
@@ -492,9 +612,11 @@ section.blog .main-content .blog-content .card-content .card {
   cursor: pointer;
 }
 
-section.blog .main-content .blog-content .card-content .card:hover {
-  -webkit-transform: scale(1.04);
-          transform: scale(1.04);
+@media (min-width: 480px) {
+  section.blog .main-content .blog-content .card-content .card:hover {
+    -webkit-transform: scale(1.04);
+            transform: scale(1.04);
+  }
 }
 
 section.blog .main-content .blog-content .card-content .card:last-of-type {
@@ -505,6 +627,7 @@ section.blog .main-content .blog-content .card-content .card:last-of-type {
 section.blog .main-content .blog-content .card-content .card h5 {
   padding: 2rem 0 0 2rem;
   text-shadow: #2A3037 0.5px 0.5px;
+  text-transform: uppercase;
 }
 
 section.blog .main-content .blog-content .card-content .card .card-description {
@@ -540,12 +663,37 @@ section.blog .main-content .blog-content .card-content .card .card-description .
 
 section.blog .main-content .blog-content .card-content .card .card-description h4 {
   font-weight: 600;
+  margin: 0 0 1rem 0;
+  font-size: 1.4rem;
+}
+
+@media (min-width: 480px) {
+  section.blog .main-content .blog-content .card-content .card .card-description h4 {
+    font-size: 2rem;
+  }
 }
 
 section.blog .main-content .blog-content .card-content .card .card-description p {
-  font-size: 0.8rem;
-  font-weight: 600;
-  margin: 0 0 1.8rem 0;
+  display: none;
+}
+
+@media (min-width: 480px) {
+  section.blog .main-content .blog-content .card-content .card .card-description p {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0 0 1.8rem 0;
+  }
+}
+
+section.blog aside {
+  display: none;
+}
+
+@media (min-width: 480px) {
+  section.blog aside {
+    display: block;
+  }
 }
 
 section.blog aside .aside-cards {
