@@ -663,11 +663,11 @@ body.dark .tendencies .content-tendencies article.card {
   }
 }
 
-.tendencies .content-tendencies article.card .description {
+.tendencies .content-tendencies article.card .card-description {
   padding: 2rem;
 }
 
-.tendencies .content-tendencies article.card .description h3 {
+.tendencies .content-tendencies article.card .card-description h3 {
   font-size: .9rem;
   background: #FA6980;
   color: #f1f2f6;
@@ -681,17 +681,17 @@ body.dark .tendencies .content-tendencies article.card {
   text-transform: uppercase;
 }
 
-.tendencies .content-tendencies article.card .description h4 {
+.tendencies .content-tendencies article.card .card-description h4 {
   font-size: 1rem;
   font-weight: 700;
   color: #2A3037;
 }
 
-body.dark .tendencies .content-tendencies article.card .description h4 {
+body.dark .tendencies .content-tendencies article.card .card-description h4 {
   color: #f1f2f6;
 }
 
-.tendencies .content-tendencies article.card .description p {
+.tendencies .content-tendencies article.card .card-description p {
   font-size: 0.8rem;
   color: #7A838D;
 }
