@@ -15,7 +15,7 @@
     background-color: $primaryGray;
   }
   h2 {
-    padding: 0 0 0 1.5rem;
+    padding: 0 0 0 2rem;
     margin-bottom: 2rem;
     font-weight: 600;
     font-size: 1.7rem;
@@ -24,6 +24,15 @@
 
     @include phone{
       padding: 0;
+      text-align: center;
+    }
+
+    @include tablet {
+      text-align: center;
+    }
+
+    @include desktop{
+      text-align: left;
     }
 
     body.dark & {
