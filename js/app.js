@@ -1,28 +1,34 @@
-const btnDark = document.querySelector('#dark-mode');
+/* Evento para mostrar dark mode */
 
-btnDark.addEventListener('click', () => {
-    document.body.classList.toggle('dark');
-    btnDark.classList.toggle('active');
+const btnDark = document.querySelector("#dark-mode");
+
+btnDark.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+  btnDark.classList.toggle("active");
 });
 
-const html = document.querySelector("html");
-const nav = document.querySelector(".navigation");
-const hamburguerMenu = document.querySelector(".hamburguer-menu");
 
-const navigationIsOpen = () => html.classList.contains("nav-is-open");
+/* Evento para mostrar menu lateral */
+const nav = document.querySelector('.menu-wrap');
 
-const openNav = () => {
-    html.classList.add("nav-is-open");
-}
 
-const closeNav = () => {
-    html.classList.remove("nav-is-open");
-}
+nav.addEventListener('click', (e) => {
 
-const toggleNav = () => {
-    navigationIsOpen() ? closeNav() : openNav();
-}
+    const menu = e.target.classList;
 
-hamburguerMenu.addEventListener('click', () => {
-    toggleNav();
+    const body = document.body,
+          openMenu = document.querySelector('.fa-bars'),
+          closeMenu = document.querySelector('.fa-times');
+    
+    if (menu.contains('fa-bars')) {
+        closeMenu.style.display = 'block';
+        openMenu.style.display = 'none';
+        body.classList.add('open-menu');
+
+    } else if(menu.contains('fa-times')){
+        closeMenu.style.display = 'none';
+        openMenu.style.display = 'block';
+        body.classList.remove('open-menu');
+    }
 })
+

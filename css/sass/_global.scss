@@ -1,6 +1,10 @@
 
 html{
     @include box-sizing(border-box);
+    
+    // max-width: 1366px;
+    // Solucionar los widths con 120% en caso de que se utilice esta resolución
+
 }
 
 *,
@@ -15,9 +19,17 @@ body{
     font-family: $font;
     background-color: $white;
     transition: background-color .3s ease-in-out;
+    width: 100%;
 
     &.dark{
         background-color: $black;
+    }
+
+}
+
+body.open-menu{
+    header.header{
+        min-height: 100%;
     }
 }
 
