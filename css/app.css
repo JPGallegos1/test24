@@ -444,11 +444,11 @@ section.hero .content-hero .hero-description h1 img.pin {
   section.hero .content-hero .hero-description h1 {
     font-size: 1.89rem;
     font-weight: 600;
-    width: 85%;
-    margin: 1.5rem 0 1.5rem 0rem;
+    width: 80%;
+    margin: 1.5rem 0 1.5rem 1rem;
   }
   section.hero .content-hero .hero-description h1 img.pin {
-    height: 2.2rem;
+    height: 1.5rem;
   }
 }
 
@@ -480,7 +480,7 @@ section.hero .content-hero .hero-description h3 {
 
 @media (min-width: 768px) {
   section.hero .content-hero .hero-description h3 {
-    margin: 1rem 0 0 0;
+    margin: 1rem 0 0 1rem;
   }
 }
 
@@ -499,7 +499,7 @@ section.hero .content-hero .hero-description p {
 
 @media (min-width: 768px) {
   section.hero .content-hero .hero-description p {
-    margin: 1rem 0 0 0;
+    margin: 1rem 0 0 1rem;
   }
 }
 
