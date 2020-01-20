@@ -44,8 +44,16 @@ section.blog {
         flex-direction: column;
 
         @include phone {
+          flex: 0 0 80%;
+          margin: 0 1.1rem 0 0;
+          min-width: 100%;
+
+        }
+
+        @include tablet {
           flex: 0 0 66%;
           margin: 0 1.1rem 0 0;
+          min-width: 0;
         }
         .card {
           height: 55vh;
@@ -122,6 +130,10 @@ section.blog {
     display: none;
 
     @include phone {
+      display: none;
+    }
+
+    @include tablet{
       display: block;
     }
 
