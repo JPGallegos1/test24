@@ -1,58 +1,103 @@
+html {
+  @include box-sizing(border-box);
 
-html{
-    @include box-sizing(border-box);
-    
-    // max-width: 1366px;
-    // Solucionar los widths con 120% en caso de que se utilice esta resolución
-
+  // max-width: 1366px;
+  // Solucionar los widths con 120% en caso de que se utilice esta resolución
 }
 
 *,
 *:after,
-*:before{
-    @include box-sizing(inherit);
+*:before {
+  @include box-sizing(inherit);
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    font-family: $font;
-    background-color: $white;
-    transition: background-color .3s ease-in-out;
-    width: 100%;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+  background-color: $white;
+  transition: background-color 0.3s ease-in-out;
+  width: 100%;
 
-    &.dark{
-        background-color: $black;
+  &.dark {
+    background-color: $black;
+  }
+}
+
+body.open-menu {
+  header.header {
+    min-height: 100%;
+
+    .header-container {
+      display: flex;
+      margin: 0;
+      min-width: 100%;
+
+      section.logo-aenima {
+        display: none;
+      }
+
+      section.switch {
+        flex: 0 0 50%;
+
+        button{
+            margin: 0 auto;
+        }
+      }
+
+      section.menu-wrap {
+        flex: 0 0 50%;
+        position: relative;
+        top: .8rem;
+
+        i.fa-times{
+            position: relative;
+            left: 10rem;
+            
+        }
+
+        nav.menu {
+          display: block;
+
+          ul {
+            display: inline-block;
+          }
+        }
+      }
     }
-
+  }
 }
 
-body.open-menu{
-    header.header{
-        min-height: 100%;
+body.dark{
+    i.fa-times, i.fa-bars{
+        color: $white;
     }
 }
 
-h1, h2, h3, h4, h5{
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
 }
 
-h1{
-    font-size: 2.4rem;
+h1 {
+  font-size: 2.4rem;
 }
 
-h2{
-    font-size: 2.1rem;
+h2 {
+  font-size: 2.1rem;
 }
 
-h3{
-    font-size: 1.9rem;
+h3 {
+  font-size: 1.9rem;
 }
 
-h4{
-    font-size: 1.7rem;
+h4 {
+  font-size: 1.7rem;
 }
 
-p{
-    font-size: 1.1rem;
+p {
+  font-size: 1.1rem;
 }

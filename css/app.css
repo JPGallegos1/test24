@@ -16,8 +16,8 @@ body {
   padding: 0;
   font-family: "Montserrat", sans-serif;
   background-color: #f1f2f6;
-  -webkit-transition: background-color .3s ease-in-out;
-  transition: background-color .3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
   width: 100%;
 }
 
@@ -29,7 +29,58 @@ body.open-menu header.header {
   min-height: 100%;
 }
 
-h1, h2, h3, h4, h5 {
+body.open-menu header.header .header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  min-width: 100%;
+}
+
+body.open-menu header.header .header-container section.logo-aenima {
+  display: none;
+}
+
+body.open-menu header.header .header-container section.switch {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+body.open-menu header.header .header-container section.switch button {
+  margin: 0 auto;
+}
+
+body.open-menu header.header .header-container section.menu-wrap {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  position: relative;
+  top: .8rem;
+}
+
+body.open-menu header.header .header-container section.menu-wrap i.fa-times {
+  position: relative;
+  left: 10rem;
+}
+
+body.open-menu header.header .header-container section.menu-wrap nav.menu {
+  display: block;
+}
+
+body.open-menu header.header .header-container section.menu-wrap nav.menu ul {
+  display: inline-block;
+}
+
+body.dark i.fa-times, body.dark i.fa-bars {
+  color: #f1f2f6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 0;
 }
 
