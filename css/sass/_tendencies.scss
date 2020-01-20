@@ -43,6 +43,10 @@
       width: 90%;
       margin: 0 auto;
 
+      span{
+        font-weight: 600;
+      }
+
       &:nth-child(2) {
         display: none;
       }

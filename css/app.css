@@ -604,6 +604,10 @@ body.dark .tendencies h2 {
   margin: 0 auto;
 }
 
+.tendencies .content-tendencies article.card span {
+  font-weight: 600;
+}
+
 .tendencies .content-tendencies article.card:nth-child(2) {
   display: none;
 }
