@@ -569,7 +569,7 @@ body.dark .tendencies .content-tendencies article.card {
   padding: 0.3rem;
   font-weight: 600;
   position: relative;
-  bottom: 7rem;
+  bottom: 8rem;
   text-transform: uppercase;
 }
 
@@ -778,6 +778,11 @@ section.blog aside .aside-cards .card {
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   cursor: pointer;
+}
+
+section.blog aside .aside-cards .card .aside-img {
+  width: 100%;
+  height: 10rem;
 }
 
 section.blog aside .aside-cards .card:hover {
