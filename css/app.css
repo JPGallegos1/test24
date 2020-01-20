@@ -416,7 +416,7 @@ section.hero .content-hero .hero-description .slider button {
 }
 
 section.hero .content-hero .hero-description h1 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   border-bottom: 2px solid #f1f2f6;
   margin: 0 0 2rem 2rem;
   padding: 1rem 0;
@@ -673,7 +673,7 @@ body.dark .tendencies .content-tendencies article.card {
   padding: 0.3rem;
   font-weight: 600;
   position: relative;
-  bottom: 7rem;
+  bottom: 8rem;
   text-transform: uppercase;
 }
 
