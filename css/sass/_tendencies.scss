@@ -6,7 +6,7 @@
 
   @include phone {
     padding: 4rem 0 0 0;
-    height: 100vh;
+    height: 120vh;
     padding: 2.5rem 2.5rem;
 
   }
@@ -52,7 +52,6 @@
       }
 
       @include phone {
-
           background-color: $white;
           border-radius: 10px;
       }
@@ -90,6 +89,7 @@
         margin: 2px;
         border-radius: 0;
         @include phone{
+          margin: 0;
           width: 100%;
           border-top-left-radius: 10px;
           border-top-right-radius: 10px;
