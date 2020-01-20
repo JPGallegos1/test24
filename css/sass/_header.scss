@@ -28,7 +28,11 @@
     font-weight: bold;
 
     @include phone {
-      max-width: $desktop;
+      max-width: $tablet;
+    }
+
+    @include tablet {
+      max-width: $tablet;
     }
 
     section.logo-aenima {
@@ -85,7 +89,6 @@
     }
 
     section.menu-wrap {
-      // display: none;
 
       .hamburguer-menu{
 
@@ -107,8 +110,11 @@
 
         ul {
           display: flex;
-          justify-content: space-between;
           padding: 0;
+
+          @include tablet{
+            justify-content: space-between;
+          }
 
           li {
             list-style-type: none;
@@ -141,7 +147,14 @@
       }
     }
   }
+
+  @include phone {
+    section.logo-aenima, section.switch, section.menu-wrap{
+      margin: 0 0 0 1rem;
+    }
+  }
 }
+
 
 .fixed-header {
   position: fixed;

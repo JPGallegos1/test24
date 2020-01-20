@@ -1,4 +1,4 @@
-/* Evento para mostrar dark mode */
+/* Evento para dark mode */
 
 const btnDark = document.querySelector("#dark-mode");
 

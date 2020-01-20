@@ -100,7 +100,7 @@
         padding: 2rem;
 
         h3 {
-          font-size: 1.1rem;
+          font-size: .9rem;
           background: $red;
           color: $white;
           width: 28%;
@@ -109,8 +109,12 @@
           padding: 0.3rem;
           font-weight: 600;
           position: relative;
-          bottom: 8rem;
+          bottom: 7rem;
           text-transform: uppercase;
+
+          @include tablet{
+            font-size: 1.1rem;
+          }
         }
 
         h4 {
