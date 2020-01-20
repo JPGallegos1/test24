@@ -977,7 +977,19 @@ footer .footer-container {
 
 @media (min-width: 480px) {
   footer .footer-container {
-    max-width: 1100px;
+    max-width: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+  footer .footer-container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 768px) {
+  footer .footer-container .footer-logo {
+    margin: 0 0 0 2rem;
   }
 }
 
@@ -989,5 +1001,11 @@ footer .footer-container address {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  footer .footer-container address {
+    margin: 0 2rem 0 0;
+  }
 }
 /*# sourceMappingURL=app.css.map */

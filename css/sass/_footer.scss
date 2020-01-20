@@ -17,13 +17,28 @@ footer {
     align-items: center;
 
     @include phone{
-      max-width: $desktop;
+      max-width: $phone;
+    }
+
+    @include tablet{
+      max-width: $tablet;
+
+    }
+
+    .footer-logo{
+      @include tablet{
+        margin: 0 0 0 2rem;
+      }
     }
 
     address {
       display: flex;
       width: 3rem;
       justify-content: space-between;
+      
+      @include tablet{
+        margin: 0 2rem 0 0;
+      }
     }
   }
 }
